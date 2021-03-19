@@ -1,38 +1,160 @@
-.App {
-  text-align: center;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+:root {
+  --primary: #2a3442;
+  --tertiary: #fafafa;
+  --accent: #ba3602;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.content-container {
+  height: 100vh;
+  background-color: var(--primary);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+* {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+/* Animations */
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
+@keyframes left-to-right {
   from {
-    transform: rotate(0deg);
+    transform: translateX(-100%);
   }
   to {
-    transform: rotate(360deg);
+    transform: translateX(0);
   }
+}
+
+@keyframes right-to-left {
+  from {
+    transform: translateX(200%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+/* Navbar */
+
+.navbar {
+  background-color: var(--primary);
+  height: 15vh;
+}
+
+.navbar-item {
+  color: white;
+  font-size: 1.1rem;
+}
+
+.navbar .navbar-item:hover {
+  color: var(--accent);
+}
+
+.navbar .navbar-brand a.navbar-item img {
+  max-height: 3rem;
+}
+
+/* Hero */
+
+.hero {
+  color: white;
+  height: 87vh;
+}
+
+.hero-body {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.hero h3 {
+  color: white;
+  animation: 1.1s ease-out 0s 1 left-to-right;
+}
+
+.avatar-pic {
+  border-radius: 50%;
+  height: 160px;
+  width: 160px;
+}
+
+.intro {
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  opacity: 65%;
+  cursor: default;
+  animation: 1.1s ease-out 0s 1 right-to-left;
+}
+
+.intro::before {
+  content: "<";
+  margin-right: 1rem;
+}
+
+.intro::after {
+  content: "/>";
+  margin-left: 1rem;
+}
+.intro:before,
+.intro:after {
+  color: var(--accent);
+  font-size: 1.3em;
+}
+
+/* About */
+
+.about {
+  background-color: var(--tertiary);
+  height: 99.5vh;
+}
+
+.about-para {
+  line-height: 1.8rem;
+  font-size: 1.2rem;
+}
+
+/* Skills */
+
+.tech-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.tech-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.full-stack-tech {
+  display: flex;
+  justify-content: space-around;
+}
+
+/* Experience */
+
+.milestone-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 80px;
+}
+
+.milestone-image img {
+  height: 50px;
+  width: 80px;
+}
+
+.dcu-container {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.divider {
+  position: relative;
+  top: 30px;
 }
