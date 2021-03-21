@@ -6,8 +6,9 @@ const NavbarMenu = () => {
       <div className="navbar-start"></div>
       <div className="navbar-end">
         <NavbarItem name="About Me" link="#about-me" />
-        <NavbarItem name="Projects" link="/projects" />
-        <NavbarItem name="Get in Touch" link="/contact" />
+        <NavbarItem name="Skills" link="/#skills" />
+        <NavbarItem name="Projects" link="/#projects" />
+        <NavbarItem name="Get in Touch" link="/#contact" />
       </div>
     </div>
   );
