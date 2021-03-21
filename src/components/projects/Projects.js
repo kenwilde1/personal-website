@@ -7,7 +7,7 @@ const Projects = () => {
   const [searchTerm, setSearchTerm] = useState("");
 
   return (
-    <section id="projects">
+    <section className="section" id="projects">
       <div className="container is-narrow">
         <div className="columns">
           <div className="column my-projects-container">
@@ -44,6 +44,8 @@ const Projects = () => {
                     techOne={project.technologies[0]}
                     techTwo={project.technologies[1]}
                     techThree={project.technologies[2]}
+                    techFour={project.technologies[3]}
+                    techFive={project.technologies[4]}
                   />
                 ))
               : projects

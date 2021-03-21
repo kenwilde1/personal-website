@@ -5,7 +5,7 @@ const About = () => {
   const [isHovered, setHovered] = useState(false);
 
   return (
-    <section id="about-me">
+    <section className="section" id="about-me">
       <div className="container">
         <div className="columns">
           <div className="column about-container">

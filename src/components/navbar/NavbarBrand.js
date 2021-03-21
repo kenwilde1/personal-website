@@ -4,7 +4,9 @@ const NavbarBrand = () => {
   return (
     <div className="navbar-brand">
       <a className="navbar-item" href="/">
-        <img src={logo} alt="logo" id="navbar-logo" height="48" />
+        <h1 className="title">
+          kenwilde<span className="highlight">.net</span>
+        </h1>
       </a>
       <a
         role="button"
