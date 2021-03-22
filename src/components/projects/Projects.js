@@ -15,6 +15,7 @@ const Projects = () => {
               <h1 className="title">
                 My <span className="highlight">Projects</span>
               </h1>
+              <p className="header-line"></p>
             </div>
             <div className="my-projects-input">
               <div className="control">

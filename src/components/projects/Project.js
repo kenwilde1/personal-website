@@ -1,7 +1,7 @@
 const Project = (props) => {
   return (
     <div
-      className="column project is-one-fifth-desktop is-one-quarter-tablet is-half-mobile"
+      className="column project is-one-quarter-widescreen is-one-fifth-fullhd is-two-fifths-desktop is-one-third-tablet is-three-quarters-mobile"
       id={props.id}
     >
       <figure className="image is-3by2">

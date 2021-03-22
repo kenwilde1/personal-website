@@ -18,10 +18,11 @@ const Skills = () => {
       <div className="container">
         <div className="columns">
           <div className="column front-end">
-            <div className="front-end-header mb-6 ">
+            <div className="front-end-header mb-6">
               <h1 className="title">
                 Front-end <span className="highlight">Skills</span>
               </h1>
+              <p className="header-line"></p>
             </div>
             <div className="front-end-content">
               <SkillItem name="HTML" url={html} />
@@ -37,6 +38,7 @@ const Skills = () => {
               <h1 className="title">
                 Back-end <span className="highlight">Skills</span>
               </h1>
+              <p className="header-line"></p>
             </div>
             <div className="back-end-content">
               <SkillItem name="Node JS" url={node} />

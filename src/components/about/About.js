@@ -7,12 +7,13 @@ const About = () => {
   return (
     <section className="section" id="about-me">
       <div className="container">
-        <div className="columns">
-          <div className="column about-container">
+        <div className="columns is-centered">
+          <div className="column about-container is-full-mobile is-half-desktop is-two-thirds-tablet">
             <div className="about-me-header">
               <h1 className="title">
                 About <span className="highlight">Me</span>
               </h1>
+              <p className="header-line"></p>
             </div>
             <div className="about-me-content">
               <p className="about-me-education">

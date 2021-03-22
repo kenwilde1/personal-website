@@ -9,10 +9,16 @@ import About from "./components/about/About";
 import Skills from "./components/skills/Skills";
 import Projects from "./components/projects/Projects";
 import Contact from "./components/contact/Contact";
+import Footer from "./components/footer/Footer";
+
+// Import Utilities
+import animate from "./animate";
 
 function App() {
   // some dependencies produce console errors
-  console.log = console.warn = console.error = () => {};
+  // console.log = console.warn = console.error = () => {};
+
+  animate();
 
   return (
     <div className="content-container">
@@ -22,6 +28,7 @@ function App() {
       <Skills />
       <Projects />
       <Contact />
+      <Footer />
     </div>
   );
 }

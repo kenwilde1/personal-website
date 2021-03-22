@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400&display=swap");
 
 :root {
   --primary: #2a3442;
@@ -10,14 +10,20 @@
 .content-container {
   height: 100vh;
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 
 * {
   font-family: "Poppins", sans-serif;
   scroll-behavior: smooth;
+  font-weight: 400;
 }
 
 .highlight {
+  color: var(--accent);
+}
+
+#highlight {
   color: var(--accent);
 }
 
@@ -129,6 +135,45 @@ strong {
   font-size: 1.3em;
 }
 
+.hero-links {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.hero-link {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+  border-radius: 20px;
+  padding: 5px 15px;
+  min-width: 125px;
+  width: 125px;
+  max-width: 150px;
+  transition: all 0.1s ease-in-out;
+}
+
+#linkedin-hero {
+  background: blue;
+}
+
+#linkedin-hero:hover {
+  background-color: var(--tertiary);
+  color: blue;
+}
+
+#github-hero {
+  background: var(--tertiary);
+  color: black;
+}
+
+#github-hero:hover {
+  background: black;
+  color: var(--tertiary);
+}
+
 /* About */
 
 #about-me {
@@ -155,7 +200,20 @@ strong {
   align-items: center;
 }
 
-.about-me-header h1::after {
+.header-line {
+  background: var(--accent);
+  height: 3px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  width: 200px;
+}
+
+.about-me-header {
+  display: flex;
+  align-items: center;
+}
+
+/* .about-me-header h1::after {
   content: "";
   position: absolute;
   top: 9%;
@@ -163,7 +221,7 @@ strong {
   width: 20%;
   height: 3px;
   background: var(--accent);
-}
+} */
 
 /* Skills */
 
@@ -191,15 +249,10 @@ strong {
   gap: 1rem;
 }
 
-.front-end-header h1::after,
-.back-end-header h1::after {
-  content: "";
-  position: absolute;
-  top: 7.5%;
-  margin-left: 1rem;
-  width: 20%;
-  height: 3px;
-  background: var(--accent);
+.front-end-header,
+.back-end-header {
+  display: flex;
+  align-items: center;
 }
 
 /* Projects */
@@ -208,7 +261,7 @@ strong {
   padding-top: 100px;
   padding-bottom: 100px;
   background-color: var(--tertiary);
-  min-height: 90vh;
+  min-height: 100vh;
 }
 
 .my-projects-container {
@@ -217,19 +270,14 @@ strong {
   gap: 2rem;
 }
 
-.my-projects-header h1::after {
-  content: "";
-  position: absolute;
-  top: 2.5%;
-  margin-left: 1rem;
-  width: 20%;
-  height: 3px;
-  background: var(--accent);
-}
-
 .my-projects-input {
   min-width: 250px;
   max-width: 400px;
+}
+
+.my-projects-header {
+  display: flex;
+  align-items: center;
 }
 
 .image img {
@@ -331,6 +379,8 @@ figcaption h1 {
 #contact {
   background-color: var(--primary);
   color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 #contact h1 {
@@ -339,4 +389,193 @@ figcaption h1 {
 
 .label {
   color: white;
+}
+
+/* Footer */
+
+#footer {
+  background: var(--tertiary);
+}
+
+.footer-icons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+}
+
+.footer-icon {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightgray;
+  transition: all 0.1s ease-in;
+}
+
+#linkedin-footer {
+  color: blue;
+}
+
+#linkedin-footer:hover {
+  background: blue !important;
+  color: white !important;
+}
+
+#github-footer {
+  color: black;
+}
+
+#github-footer:hover {
+  background: rgba(0, 0, 0, 0.8);
+  color: white;
+}
+
+#email-footer {
+  color: var(--accent);
+}
+
+#email-footer:hover {
+  background: var(--accent);
+  color: white;
+}
+
+@media only screen and (max-width: 1500px) {
+  .about-me-header {
+    padding-left: 50px;
+  }
+  .about-me-content {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #contact h1 {
+    font-size: 1rem;
+  }
+}
+
+@media only screen and (max-width: 911px) {
+  .front-end .header-line,
+  .back-end .header-line {
+    min-width: 50px;
+    max-width: 150px;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .front-end-content,
+  .front-end-header,
+  .back-end-content,
+  .back-end-header {
+    padding-left: 50px;
+  }
+  .front-end-header h1,
+  .back-end-header h1 {
+    font-size: 1.5rem;
+  }
+  #projects {
+    padding-left: 50px;
+  }
+  .my-projects-header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (max-width: 880px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+  .hero-body {
+    padding-top: 50px;
+  }
+  .front-end .header-line,
+  .back-end .header-line {
+    min-width: 50px;
+    max-width: 80px;
+  }
+  .project-buttons a {
+    height: 30px;
+    width: 60px;
+  }
+  .project-description p {
+    font-size: 0.7rem;
+  }
+}
+
+@media only screen and (max-width: 770px) {
+  #projects {
+    padding-left: 0;
+  }
+  .about-me-header,
+  .back-end-header,
+  .front-end-header {
+    padding-right: 50px;
+    justify-content: center;
+  }
+  .my-projects-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .my-projects-input .control input {
+    width: 300px;
+  }
+  .about-me-content {
+    padding-right: 50px;
+  }
+  .avatar-pic {
+    margin-top: 50px;
+  }
+  .front-end {
+    margin-bottom: 50px;
+  }
+  .front-end-header,
+  .back-end-header {
+    margin-bottom: 0 !important;
+  }
+  .project {
+    margin-right: 50px !important;
+    width: 70vw !important;
+  }
+  .project-grid {
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .project-description p {
+    font-size: 1.5rem;
+    margin-bottom: -50px;
+  }
+
+  .project-buttons a {
+    margin-bottom: 50px;
+    height: 50px;
+    width: 100px;
+  }
+  .is-variable {
+    padding-left: 35px;
+    margin: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .my-projects-header .header-line {
+    width: 100px;
+  }
+  .my-projects-input {
+    width: 200px;
+  }
+  .hero h1 {
+    font-size: 1.7rem;
+  }
+  .hero-body {
+    padding-top: 50px;
+  }
+  .hero-body p {
+    font-size: 1rem;
+  }
 }
