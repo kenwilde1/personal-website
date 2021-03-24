@@ -1,6 +1,9 @@
-import logo from "../../images/logo.png";
-
 const NavbarBrand = () => {
+  const toggleNavbar = (e) => {
+    e.target.classList.toggle("is-active");
+    document.querySelector("#navMenu").classList.toggle("is-active");
+  };
+
   return (
     <div className="navbar-brand">
       <a className="navbar-item" href="/">
@@ -13,7 +16,8 @@ const NavbarBrand = () => {
         className="navbar-burger"
         aria-label="menu"
         aria-expanded="false"
-        data-target="#navbarMenu"
+        data-target="navMenu"
+        onClick={toggleNavbar}
       >
         <span aria-hidden="true"></span>
         <span aria-hidden="true"></span>

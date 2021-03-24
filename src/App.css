@@ -10,7 +10,6 @@
 .content-container {
   height: 100vh;
   background-color: var(--primary);
-  overflow-x: hidden;
 }
 
 * {
@@ -83,6 +82,7 @@ strong {
 
 .navbar .navbar-item:hover {
   color: var(--accent);
+  background: var(--primary);
 }
 
 .navbar .navbar-brand a.navbar-item img {
@@ -91,6 +91,15 @@ strong {
 
 .navbar h1 {
   color: white;
+}
+
+.navbar-burger span {
+  background: white;
+}
+
+#navMenu {
+  text-align: center;
+  background: var(--primary);
 }
 
 /* Hero */
@@ -445,7 +454,10 @@ figcaption h1 {
   .about-me-header {
     padding-left: 50px;
   }
-  .about-me-content {
+  .about-me-content,
+  .front-end,
+  .back-end,
+  .my-projects-container {
     padding-left: 50px;
   }
 }
@@ -456,7 +468,7 @@ figcaption h1 {
   }
 }
 
-@media only screen and (max-width: 911px) {
+@media only screen and (max-width: 985px) {
   .front-end .header-line,
   .back-end .header-line {
     min-width: 50px;
@@ -552,7 +564,7 @@ figcaption h1 {
   }
 
   .project-buttons a {
-    margin-bottom: 50px;
+    margin-bottom: 10px;
     height: 50px;
     width: 100px;
   }
@@ -562,7 +574,23 @@ figcaption h1 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 680px) {
+  .project-description p {
+    font-size: 1.1rem;
+    margin-bottom: -20px;
+  }
+}
+
+@media only screen and (max-width: 513px) {
+  .about-me-content {
+    text-align: center;
+  }
+  .about-me-header h1 {
+    font-size: 1.4rem;
+  }
+  .about-me-header .header-line {
+    width: 40%;
+  }
   .my-projects-header .header-line {
     width: 100px;
   }
@@ -577,5 +605,63 @@ figcaption h1 {
   }
   .hero-body p {
     font-size: 1rem;
+  }
+  .project-description p {
+    font-size: 1rem;
+    margin-bottom: -5px;
+  }
+}
+
+@media only screen and (max-width: 420px) {
+  .about-me-header {
+    padding: 0;
+    text-align: left;
+    justify-content: flex-start;
+  }
+  .about-me-content {
+    text-align: left;
+    padding: 0;
+  }
+  .front-end-header,
+  .back-end-header {
+    justify-content: flex-start;
+  }
+  .front-end,
+  .back-end {
+    padding: 0;
+  }
+  .my-projects-container {
+    padding: 0;
+    align-items: flex-start;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .my-projects-header {
+    width: 100%;
+  }
+  .my-projects-header .header-line {
+    min-width: 40%;
+    max-width: 50%;
+  }
+  .is-variable {
+    padding: 0;
+  }
+  #projects .container {
+    width: 100vw;
+  }
+  .project {
+    margin-left: 40px;
+    margin-right: 40px;
+  }
+  .my-projects-input {
+    width: 100%;
+  }
+  .project p {
+    font-size: 0.75rem;
+    margin-bottom: 8px;
+  }
+  .project-buttons a {
+    height: 35px;
+    width: 70px;
   }
 }
