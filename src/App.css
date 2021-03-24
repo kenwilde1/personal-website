@@ -10,6 +10,7 @@
 .content-container {
   height: 100vh;
   background-color: var(--primary);
+  overflow-x: hidden;
 }
 
 * {
