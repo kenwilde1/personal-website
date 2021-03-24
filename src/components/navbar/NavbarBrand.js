@@ -1,6 +1,6 @@
 const NavbarBrand = () => {
   const toggleNavbar = (e) => {
-    e.target.classList.toggle("is-active");
+    e.currentTarget.classList.toggle("is-active");
     document.querySelector("#navMenu").classList.toggle("is-active");
   };
 
