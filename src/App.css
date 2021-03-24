@@ -124,7 +124,6 @@ strong {
 .intro {
   font-size: 1.3rem;
   line-height: 2.5rem;
-  opacity: 80%;
   cursor: default;
   animation: 1.1s ease-out 0s 1 right-to-left;
 }
