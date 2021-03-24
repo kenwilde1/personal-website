@@ -23,7 +23,7 @@ const Projects = () => {
                   className="input is-danger is-rounded is-normal"
                   type="text"
                   placeholder="Filter - e.g 'html'"
-                  onChange={(e) => setSearchTerm(e.target.value)}
+                  onChange={(e) => setSearchTerm(e.target.value.toLowerCase())}
                 />
               </div>
             </div>
