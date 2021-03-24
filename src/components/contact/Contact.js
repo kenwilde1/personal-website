@@ -34,7 +34,7 @@ const Contact = () => {
           <div className="column is-three-quarters">
             <h1 className="subtitle is-spaced is-size-3-desktop is-size-3-tablet is-size-3-mobile">
               Thanks for visiting kenwilde
-              <span className="highlight">.net</span>. Want to get in touch?
+              <span className="highlight">.ie</span>. Want to get in touch?
             </h1>
           </div>
         </div>

@@ -8,7 +8,7 @@ const NavbarBrand = () => {
     <div className="navbar-brand">
       <a className="navbar-item" href="/">
         <h1 className="title">
-          kenwilde<span className="highlight">.net</span>
+          kenwilde<span className="highlight">.ie</span>
         </h1>
       </a>
       <a

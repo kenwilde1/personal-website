@@ -10,7 +10,7 @@ const Footer = () => {
     <footer className="section has-text-centered" id="footer">
       <div className="container is-narrow">
         <p className="subtitle mt-3">
-          kenwilde<span className="highlight">.net</span> &#169;
+          kenwilde<span className="highlight">.ie</span> &#169;
         </p>
         <div className="field footer-icons mt-5">
           <a
